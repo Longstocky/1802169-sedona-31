@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Варвара Столярова](https://up.htmlacademy.ru/htmlcss/31/user/1802169).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Кривонос] https://up.htmlacademy.ru/htmlcss/31/tutors.
 
 ---
 
