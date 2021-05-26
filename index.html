@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Седона</title>
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+</head>
+
 <body>
   <header>
+    <img src="img/index/image.png" width="1200" height="509" alt="Седона">
+      <h1>
+        Добро пожаловать в Седону
+      </h1>
     <nav>
-      <a>
+      <a href="blank.html">
         <img src="img/index/logo.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <ul>
-      <li><a href="blank.html">Информация</a></li>
-      <li><a href="blank.html">Фото и видео</a></li>
-      <li><a href="#mapOfState">Карта штата</a></li>
-      <li><a href="catalog.html">Гостиницы</a></li>
-    </ul>
+        <li><a href="blank.html">Информация</a></li>
+        <li><a href="blank.html">Фото и видео</a></li>
+        <li><a href="#mapOfState">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
     </nav>
-    </header>
-    <main>
-    <section>
-    <h1>
-      Добро пожаловать в Седону
-    </h1>
+  </header>
+  <main>
+    <article>
+      <h2>
+        Седона небольшой городок в Аризоне,
+        заслуживающий большего!
+      </h2>
         <p>
-          Седона небольшой городок в Аризоне, 
-          заслуживающий большего!
-        </p>
-        <h2>
           рассмотрим 5 причин по которым седона круче,
-           чем гранд каньон!
-        </h2>
-      </section>
-      <section>
+        чем гранд каньон!
+        </p>
+      </article>
+    <section>
       <ol>
         <li>
           <h3>
             Настоящий городок
           </h3>
-        <p>Седона — не аттракцион для туристов, там
-          течёт своя жизнь</p>
-          <img src="img/index/image.png" width="800" height="256"
-           alt="Вид города">
+          <p>Седона — не аттракцион для туристов, там
+            течёт своя жизнь</p>
+          <img src="img/index/image.png" width="800" height="256" alt="Вид города">
         </li>
+      </ol>
+
+        <ul>
+          <li>
+            <h3 class="housing">Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле,
+              всё как в кино!</p>
+          </li>
+          <li>
+            <h3 class="food">Еда</h3>
+            <p>Всегда заказывайте фирменный бургер,
+              вы не разочаруетесь!</p>
+          </li>
+           <li>
+            <h3 class="suvenirs">Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+
+      <ol start="2">
         <li>
           <h3>
             Там есть мост дьявола
           </h3>
           <p>Да, по нему можно пройти! Если конечно
             вы осмелитесь</p>
-            <img src="img/index/image.png" width="800" height="256"
-           alt="Горы">
+          <img src="img/index/image.png" width="800" height="256" alt="Горы">
         </li>
         <li>
           <h3>
@@ -65,69 +86,50 @@
           </h3>
           <p>ехать в седону из лас-вегаса совсем
             не скучно!</p>
-         </li>
-         <li>
+        </li>
+        <li>
           <h3>
             Мало туристов
           </h3>
           <p>большинство едет в гранд каньон
             и толпится там</p>
-         </li>
-       </ol>
-      </section>
+        </li>
+      </ol>
+    </section>
 
-      <section>
-        <ul>
-          <li>
-          <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле,
-               всё как в кино!</p>
-          </li>
-          <li>
-          <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер,
-               вы не разочаруетесь!</p>
-          </li>
-          <li>
-          <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
-      </section>
+    <section>
+      <h2>
+        Заинтересовались?
+      </h2>
+      <p>Укажите предполагаемые даты поездки,
+        и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="entryDate">Дата заезда</label>
+          <input type="date" name="date" id="entryDate" value="2017-04-04">
+        </p>
+        <p>
+          <label for="departureDate">Дата выезда</label>
+          <input type="date" name="date" value="2017-07-04" id="departureDate">
+        </p>
+        <p>
+          <label for="adults">Взрослые:</label> <input id="adults" name="adults" value="2">
+          <label for="children">Дети:</label> <input id="children" name="children" value="0">
+        </p>
+        <button type="submit">найти</button>
+      </form>
+    </section>
 
-      <section>
-        <h2>
-          Заинтересовались?
-        </h2>
-        <p>Укажите предполагаемые даты поездки,
-           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-           <button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
-          <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="entryDate">Дата заезда</label>
-              <input type="date" name="date" id="entryDate" value="2017-04-04">
-          </p>
-          <p>
-            <label for="departureDate">Дата выезда</label>
-            <input type="date" name="date" value="2017-07-04" id="departureDate">
-          </p>
-          <p>
-            <label for="adults">Взрослые:</label> <input id="adults" name="adults" value="2">
-            <label for="children">Дети:</label> <input id="children" name="children" value="0">
-          </p>
-          <button type="submit">найти</button>
-        </form>
-      </section>
-
-      <section id="mapOfState">
-        <img src="img/index/map.png" width="1199" height="594" alt="Карта штата">
-      </section>
-    </main>
+    <section id="mapOfState">
+      <img src="img/index/map.png" width="1199" height="594" alt="Карта штата">
+    </section>
+  </main>
   <footer>
     <section>
       <h2>Контакты</h2>
       <p>#visitSEDONA<br>
-        Телефон: +7 800 555-86-28</p>
+        Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a></p>
     </section>
 
     <section>
@@ -148,6 +150,7 @@
       Разработано:
       <a href="https://htmlacademy.ru">HTML Academy</a>
     </p>
-   </footer>
+  </footer>
 </body>
+
 </html>
