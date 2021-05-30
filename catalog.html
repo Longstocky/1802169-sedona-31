@@ -7,8 +7,7 @@
 <body>
   <header>
     <nav>
-        <a href="index.html">
-            <img src="img/index/logo.svg" width="138" height="70" alt="Логотип города Седона"> </a>
+      <a href="index.html"><img src="img/index/logo.svg" width="138" height="70" alt="Логотип города Седона"> </a>
     <ul>
       <li><a href="index.html">Информация</a></li>
       <li><a href="blank.html">Фото и видео</a></li>
@@ -71,15 +70,22 @@
       <p>Сортировка:</p>
       <ul>
         <li>
-          <a href src="#">По цене</a>
+          <a href="#">По цене</a>
         </li>
         <li>
-          <a href src="#">По типу</a>
+          <a href="#">По типу</a>
         </li>
         <li>
-          <a href src="#">По рейтингу</p>
-          <button type="button">Вверх</button>
-          <button type="button">Вниз</button>
+          <a href="#">По рейтингу</a>
+        </li>
+        <li>
+          <!--
+            <button type="button">Вверх</button>
+            <button type="button">Вниз</button> 
+          -->
+
+          <a href="#" class="">Вверх</a>
+          <a href="#" class="">Вниз</a>
         </li>
       </ul>
     </section>
@@ -93,6 +99,8 @@
              <p>От 4000 Р</p>
              <a href="#">Подробнее</a>
              <button type="button">Забронировать</button>
+             <input type="radio" id="star-4" name="rating" value="4">
+             <label for="star-4"></label>
              <p>Рейтинг:8,5</p>
           </li>
           <li>
@@ -102,6 +110,8 @@
               <p>От 3000 Р</p>
               <a href="#">Подробнее</a>
               <button type="button">Забронировать</button>
+              <input type="radio" id="star-3" name="rating" value="3">
+             <label for="star-3"></label>
               <p>Рейтинг:8,9</p>
           </li>
           <li>
@@ -111,6 +121,8 @@
               <p>От 2000 Р</p>
               <a href="#">Подробнее</a>
               <button type="button">Забронировать</button>
+              <input type="radio" id="star-2" name="rating" value="2">
+              <label for="star-2"></label>
               <p>Рейтинг:9,2</p>
           </li>
         </ul>
