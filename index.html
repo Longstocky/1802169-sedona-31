@@ -94,32 +94,25 @@
       <button type="button">ПОИСК ГОСТИНИЦЫ В Cедоне</button>
 
       <form action="https://echo.htmlacademy.ru" method="post">
-
-
-                <!--На данном этапе нужно вынести каждый инпут в отдельный блок
-                <p> для этого не подходит. лучше <fieldset>
-                и каждая пара input label должна быть в совем fieldset
-              На лайве объясняли точно такой же пример с тегами <p> и я не вижу на картинке нужду в отдельных <fieldset>-->
         <fieldset>
-        <p>
+        <div>
           <label for="entryDate">Дата заезда</label>
           <input type="date" name="date" id="entryDate" value="2017-04-04">
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="departureDate">Дата выезда</label>
           <input type="date" name="date" value="2017-07-04" id="departureDate">
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="adults">Взрослые:</label> <input type="number" id="adults" 
           name="adults" min="1" max="10" value="2">
           <label for="children">Дети:</label> <input type="number" id="children"
            name="children" min="1" max="10" value="0">
-        </p>
         <button type="submit">найти</button>
+        </div>
       </fieldset>
       </form>
     </section>
-
     <section id="mapOfState">
       <img src="img/index/map.png" width="1199" height="594" alt="Карта штата">
     </section>
