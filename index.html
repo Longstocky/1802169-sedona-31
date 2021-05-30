@@ -25,22 +25,20 @@
     </nav>
   </header>
   <main>
-    <article>
+    <section>
       <h2>
         Седона небольшой городок в Аризоне,
         заслуживающий большего!
       </h2>
-        <p>
-          рассмотрим 5 причин по которым седона круче,
-        чем гранд каньон!
-        </p>
-      </article>
+       <p>рассмотрим 5 причин по которым седона круче,
+        чем гранд каньон!</p>
+    </section>
+
     <section>
       <ul>
         <li>
-          <h3>
-            Настоящий городок
-          </h3>
+          <h3>Настоящий городок</h3>
+          <p>-№1-</p>
           <p>Седона — не аттракцион для туристов, там
             течёт своя жизнь</p>
           <img src="img/index/image.png" width="800" height="256" alt="Вид города">
@@ -60,31 +58,27 @@
             <p>Не только китайского, но и местного производства!</p>
         </li>
         <li>
-          <h3>
-            Там есть мост дьявола
-          </h3>
+          <h3>Там есть мост дьявола</h3>
+          <p>-№2-</p>
           <p>Да, по нему можно пройти! Если конечно
             вы осмелитесь</p>
           <img src="img/index/image.png" width="800" height="256" alt="Горы">
         </li>
         <li>
-          <h3>
-            Небольшая площадь
-          </h3>
+          <h3>Небольшая площадь</h3>
+          <p>-№3-</p>
           <p>все достопримечательности
             находятся очень близко</p>
         </li>
         <li>
-          <h3>
-            Красивая дорога
-          </h3>
+          <h3>Красивая дорога</h3>
+          <p>-№4-</p>
           <p>ехать в седону из лас-вегаса совсем
             не скучно!</p>
         </li>
         <li>
-          <h3>
-            Мало туристов
-          </h3>
+          <h3>Мало туристов</h3>
+          <p>-№5-</p>
           <p>большинство едет в гранд каньон
             и толпится там</p>
         </li>
@@ -97,7 +91,8 @@
       </h2>
       <p>Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
+      <button type="button">ПОИСК ГОСТИНИЦЫ В Cедоне</button>
+
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
         <p>
@@ -109,8 +104,10 @@
           <input type="date" name="date" value="2017-07-04" id="departureDate">
         </p>
         <p>
-          <label for="adults">Взрослые:</label> <input id="adults" name="adults" value="2">
-          <label for="children">Дети:</label> <input id="children" name="children" value="0">
+          <label for="adults">Взрослые:</label> <input type="number" id="adults" 
+          name="adults" min="1" max="10" value="2">
+          <label for="children">Дети:</label> <input type="number" id="children"
+           name="children" min="1" max="10" value="0">
         </p>
         <button type="submit">найти</button>
       </fieldset>
@@ -124,10 +121,9 @@
   <footer>
     <section>
       <h2>Контакты</h2>
-      <p>#visitSEDONA<br>
-        Телефон: <a href="tel:+78005558628">+7 800 555-86-28</a></p>
+      <p><a href="#">#VisitSedona</a><br>
+       <a href="tel:+78005558628">+7 800 555-86-28</a></p>
     </section>
-
     <section>
       <h2>СоцСети</h2>
       <ul>
@@ -142,11 +138,8 @@
         </li>
       </ul>
     </section>
-    <p>
-      Разработано:
-      <a href="https://htmlacademy.ru">HTML Academy</a>
-    </p>
+    <p>Разработано:
+      <a href="https://htmlacademy.ru">HTML Academy</a></p>
   </footer>
 </body>
-
 </html>
