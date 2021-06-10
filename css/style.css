@@ -12,29 +12,39 @@
 --dark-grey: #333333; /*текст р и номера*/
 --grey-light-1: #EEEEEE; /*фон 2го блока причин*/
 --grey-light-2: #F2F2F2 /*фон полей формы*/
---grey-light-3 #CACACA; /*стрелка покой*/
+--grey-light-3: #CACACA; /*стрелка покой*/
 --grey: 0, 0, 0, 0.25 /*надписи покой*/
 } 
 
-body {
+/*body {
     min-width: 960px; /*why?*/
-    margin: 0;
+   /* margin: 0;
     padding: 0;
     font-family: "PTSans", Arial, sans-serif;
     font-size: 14;
     line-height: 21;
     font-weight: 700;
     color: var(--black);
-    text-transform: uppercase;
-    background-color: var(--white);
-    /*background-image: url("img/index.background.jpg");
+    text-transform: uppercase;*/
+   /* background-color: var(--white);
+    background-image: url("img/index.background.jpg");
     background-position: right bottom;
     background-repeat: ;*/
 }
 a {
-    text-decoration: none;
+    text-decoration:none;
 }
 img{
     max-width: 100%;
     height: auto;
+}
+main-navigation {
+    font-size: 14;
+    line-height: 26;
+    color: var(--black);
+    background-color: inherit;
+}
+.site-navigation {
+    list-style: none; /*signs of list*/
+
 }
