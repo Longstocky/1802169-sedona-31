@@ -54,7 +54,8 @@ img {
 }
 .link {
     text-decoration:none;
-    color:var(--black)
+    color:var(--black);
+    font-weight: 700;
 }
 .main_navigation_wrapper {
     background-color: var(--white);
@@ -73,7 +74,7 @@ img {
     color: var(--grey-light-3);
 }
 .link:focus {
-    color: var(--grey);
+    color: red;
 }
 .main_text {
     text-align: center;
@@ -122,4 +123,10 @@ img {
     line-height: 26px;
     font-weight: 700;
     border: none;
+}
+.button_search:hover {
+    background-color: var(--grey-dark-1);
+}
+.button_search:active {
+    background-color:var(--grey-dark-2);
 }
