@@ -5,8 +5,8 @@
 --blue: #669EC0; /*наведение*/
 --dark-blue: #5496BD; /*нажатие*/
 
-
---grey: #766357; /*кнопка заинтересовались-забронировать, кнопка рейтинг, "покой"*/
+--basic-grey: #EEEEEE;
+--grey-1: #766357; /*кнопка заинтересовались-забронировать, кнопка рейтинг, "покой"*/
 --grey-dark-1: #604E43; /*наведение*/
 --grey-dark-2: #503E33; /*нажатие*/
 --dark-grey: #333333; /*текст р и номера*/
@@ -15,33 +15,111 @@
 --grey-light-3: #CACACA; /*стрелка покой*/
 --grey: 0, 0, 0, 0.25 /*надписи покой*/
 } 
-body {
-    min-width: 960px; /*why?*/
-    margin: 0;
-    padding: 0;
+.page_body {
+    width: 1200px; 
+    margin: 0px;
+    padding: 40px;
     font-family: "PTSans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 700;
-    color: var(--black);
+    font-weight: 400;
+    color:var(--black);
     text-transform: uppercase;
-    background-color: var(--white);
-    background-image: url("img/index.background.jpg");
-    background-position: right bottom;
-    background-repeat: no-repeat;
+    background-color: var(--basic-grey);
+}
+.page_body h3{
+    font-weight: 700;
 }
 
-a {
+link {
     text-decoration:none;
-}
-main-navigation {
-    font-size: 14;
-    line-height: 26;
     color: var(--black);
-    background-color: inherit;
 }
-.site-navigation {
-    list-style: none; /*пункты списка*/
-    
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main navigation */
+.main_header {
+}
+
+.main_navigation {
+    line-height: 26px;
+    color:var(--main-black);
+    background-color: inherit;
+    /*list-style: none;*/
+    font-weight: 700;
+}
+.link {
+    text-decoration:none;
+    color:var(--black)
+}
+.main_navigation_wrapper {
+    background-color: var(--white);
+}
+.site_navigation {
+    list-style: none;
+    background-color: var(--white);
+}
+.site_navigation-current a:not([href]) {
+    background-color: var(--black);
+  }
+.link:hover {
+    color: var(--light-blue);
+}
+.link:active {
+    color: var(--grey-light-3);
+}
+.link:focus {
+    color: var(--grey);
+}
+.main_text {
+    text-align: center;
+    line-height: 26px;
+    background-color: var(--white);
+}
+.main_text h2 {
+    font-size: 21px;
+}
+.text_features {
+    color: var(--dark-grey);
+    font-weight: 400;
+}
+.features_list {
+    list-style: none;
+    padding: 0px;
+}
+.features_list h3 {
+    font-size: 21px;
+}
+.features_wide {
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+.features_item {
+    background-color: var(--white);
+}
+.searching {
+    background-color: var(--white);
+    text-align: center;
+    background-position: 356 1936;
+}
+.searching_title {
+    font-size: 30px;
+    line-height: 24px;
+}
+.button_search {
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--grey-1);
+    width: 568px;
+    height: 86px;
+    color: var(--white);
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    border: none;
 }
