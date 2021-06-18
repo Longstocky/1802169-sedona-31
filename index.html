@@ -96,24 +96,25 @@
     <section class="searching">
       <h2 class="searching_title">Заинтересовались?</h2>
       <p class="text_features">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="button_search" type="button">поиск гостиницы в седоне</button>
+      <button class="button button_search" type="button">поиск гостиницы в седоне</button>
 
       <form class="searching_form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
         <div class="searching_date">
           <label for="entry_date">Дата заезда</label>
-          <input class="icon_calendar" type="date" name="date" id="entry_date" value="2017-04-04">
+          <input class="icon icon_calendar" type="date" name="date" id="entry_date" value="2017-04-04">
         </div>
         <div class="searching_date">
           <label for="departure_date">Дата выезда</label>
-          <input class="icon_calendar" type="date" name="date" value="2017-07-04" id="departure_date">
+          <input class="icon icon_calendar" type="date" name="date" value="2017-07-04" id="departure_date">
         </div>
         <div class="searching_number">
-          <label for="adults">Взрослые:</label> <input class="plus_minus" type="number" id="adults" 
+          <label for="adults">Взрослые:</label> <input class="icon plus_minus" type="number" id="adults" 
           name="adults" min="1" max="10" value="2">
-          <label for="children">Дети:</label> <input class="plus_minus" type="number" id="children"
+          <label for="children">Дети:</label> <input class="icon plus_minus" type="number" id="children"
            name="children" min="1" max="10" value="0">
-        <button class="button_find" type="submit">найти</button>
+           <br>
+        <button class="button button_find" type="submit">найти</button>
         </div>
       </fieldset>
       </form>
@@ -123,7 +124,7 @@
       <img src="img/index/map.png" width="1199" height="594" alt="Карта штата">
     </section>
   </main>
-  
+
   <footer class="main_footer">
     <section class="footer_contacts">
       <h2 class="wisually_hidden">Контакты</h2>
