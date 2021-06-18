@@ -43,6 +43,7 @@ img {
 
             /* Main navigation */
 
+
 .main_navigation {
     line-height: 26px;
     color:var(--main-black);
@@ -100,6 +101,11 @@ img {
 .features_item {
     background-color: var(--white);
 }
+
+
+            /* searching_form */
+
+
 .searching {
     background-color: var(--white);
     text-align: center;
@@ -147,14 +153,21 @@ img {
     background-color: var(--white);
     border: 2px solid #E5E5E5;
 }
+.icon_calendar {
+    background-image: url("img/plus.svg");
+    /*background-position left: 356;*/
+}
+
 .button_find {
     background-color: var(--light-blue);
     width: 458px;
     height: 58px;
     font-size: 21px;
     line-height: 26px;
+
 }
-        /* Main footer */
+        /* footer */
+
 
 .main_footer {
     color:var(--black);
