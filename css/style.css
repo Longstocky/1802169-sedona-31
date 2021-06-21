@@ -7,8 +7,7 @@
 
 --basic-grey: #EEEEEE;
 --grey-1: #766357; /*кнопка заинтересовались-забронировать, кнопка рейтинг, "покой"*/
---grey-dark-1: #604E43; /*наведение*/
---grey-dark-2: #503E33; /*нажатие*/
+--grey-dark-1: #604E43; /*agentнажатие*/
 --dark-grey: #333333; /*текст р и номера*/
 --grey-light-1: #EEEEEE; /*фон 2го блока причин*/
 --grey-light-2: #F2F2F2; /*фон полей формы*/
@@ -27,33 +26,62 @@
     text-transform: uppercase;
     background-color: var(--basic-grey);
 }
-.page_body h3{
+.page_body .headline {
+    font-size: 21px;
+    font-weight: 700;
+}
+.text {
+    color: var(--white);
+    font-weight: 400;
+}
+.link {
+    text-decoration:none;
+    color: var(--black);
     font-weight: 700;
 }
 
-link {
-    text-decoration:none;
-    color: var(--black);
-}
+            /*background image*/
 
 img {
     max-width: 100%;
     height: auto;
 }
+.main_block {
+    border: 5px solid red;
+    width: auto;
+    height: auto;
+}
+.welcome {
+    padding-bottom: 200px;
+    margin-top: -5px;
+    margin-left: 495px;
+    
+}
+.to_the {
+    padding-bottom: 0px;
+    margin-top: -200px;
+    margin-left: 460px;
+}
+.sedona {
+    margin-top: -410px;
+    margin-left: 371px;
+    padding-bottom: 200px;
+    background-position: absolute;
+}
 
-            /* Main navigation */
 
+div {
+    background-position: absolute;
+}
+
+
+            /* main navigation */
 
 .main_navigation {
     line-height: 26px;
     color:var(--main-black);
     background-color: inherit;
     /*list-style: none;*/
-    font-weight: 700;
-}
-.link {
-    text-decoration:none;
-    color:var(--black);
     font-weight: 700;
 }
 .main_navigation_wrapper {
@@ -75,33 +103,31 @@ img {
 .link:focus {
     color:var(--grey-1);
 }
-.main_text {
+.lead {
     text-align: center;
     line-height: 26px;
     background-color: var(--white);
 }
-.main_text h2 {
-    font-size: 21px;
+.lead .text {
+    color:var(--dark-grey)
 }
-.text_features {
-    color: var(--dark-grey);
-    font-weight: 400;
-}
+
 .features_list {
     list-style: none;
     padding: 0px;
-}
-.features_list h3 {
-    font-size: 21px;
 }
 .features_wide {
     background-color: var(--light-blue);
     color: var(--white);
 }
+
+
 .features_item {
     background-color: var(--white);
 }
-
+.features .text {
+    color:var(--dark-grey);
+}
 
             /* searching_form */
 
@@ -109,9 +135,9 @@ img {
 .searching {
     background-color: var(--white);
     text-align: center;
-    background-position: 356 1936;
+    background-position: 356px 1936px;
 }
-.searching_title {
+.searching_headline {
     font-size: 30px;
     line-height: 24px;
 }
@@ -154,8 +180,8 @@ img {
     border: 2px solid #E5E5E5;
 }
 .icon_calendar {
-    background-image: url("img/plus.svg");
-    /*background-position left: 356;*/
+    /*background: url("../img/plus.svg") no-repeat;
+    background-position left: 356;*/
 }
 
 .button_find {
