@@ -241,8 +241,7 @@ div {
     display: inline;
 }
 
-.icon_calendar,
-.plus_minus {
+.field {
     background-color: var(--grey-light-2);
     font-weight: 700;
     border: none;
@@ -259,13 +258,14 @@ div {
 
 .icon_calendar {
     background: url("../img/calendar.svg") no-repeat right;
+    background-color: var(--grey-light-2);
 }
 
-.input:hover {
+.field:hover {
     background-color: #ebebeb;
 }
 
-.input:focus {
+.field:focus {
     background-color: var(--white);
     border: 2px solid #e5e5e5;
 }
