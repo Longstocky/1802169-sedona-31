@@ -278,6 +278,14 @@ div {
     line-height: 26px;
 }
 
+.button_find:hover {
+    background-color: var(--blue);
+}
+
+.button_find:active {
+    background-color: var(--dark-blue);
+}
+
 
 /* footer */
 
