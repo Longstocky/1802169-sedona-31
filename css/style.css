@@ -1,344 +1,391 @@
-                              :root {
-                                 --black: #000000;
-                                 /*текст эйч*/
-                                 --white: #ffffff;
-                                 /*фон, текст */
-                                 --light-blue: #81b3d2;
-                                 /*фон, кнопка найти-подробнее, стрелка нажатие*/
-                                 --blue: #669ec0;
-                                 /*наведение*/
-                                 --dark-blue: #5496bd;
-                                 /*нажатие*/
-                                 --basic-grey: #eeeeee;
-                                 --grey-1: #766357;
-                                 /*кнопка заинтересовались-забронировать, кнопка рейтинг, "покой"*/
-                                 --grey-dark-1: #604e43;
-                                 /*agentнажатие*/
-                                 --dark-grey: #333333;
-                                 /*текст р и номера*/
-                                 --grey-light-1: #eeeeee;
-                                 /*фон 2го блока причин*/
-                                 --grey-light-2: #f2f2f2;
-                                 /*фон полей формы*/
-                                 --grey-light-3: #cacaca;
-                                 /*стрелка покой*/
-                                 --grey: 0, 0, 0, 0.25;
-                                 /*надписи покой*/
-                             }
-                             
-                             .page_body {
-                                 width: 1200px;
-                                 margin: 0px;
-                                 padding: 40px;
-                                 font-family: "PTSans", Arial, sans-serif;
-                                 font-size: 14px;
-                                 line-height: 21px;
-                                 font-weight: 400;
-                                 color: var(--black);
-                                 text-transform: uppercase;
-                                 background-color: var(--basic-grey);
-                             }
-                             
-                             .page_body .headline {
-                                 font-size: 21px;
-                                 font-weight: 700;
-                             }
-                             
-                             .text {
-                                 color: var(--white);
-                                 font-weight: 400;
-                             }
-                             
-                             .link {
-                                 text-decoration: none;
-                                 color: var(--black);
-                                 font-weight: 700;
-                             }
-                             /*background image*/
-                             
-                             img {
-                                 max-width: 100%;
-                                 height: auto;
-                             }
-                             
-                             .main_block {
-                                 /*border: 5px solid red;*/
-                                 width: auto;
-                                 height: 509px;
-                                 background: var(--grey-light-3) url("../img/index/background.jpg") no-repeat;
-                                 background-position: center;
-                                 background-size: cover;
-                             }
-                             
-                             .welcome {
-                                 width: 188px;
-                                 height: 44px;
-                                 margin: auto;
-                                 /* padding-bottom: 0px;
+:root {
+    --black: #000000;
+    /*текст эйч*/
+    --semi-black: rgba(0, 0, 0, 0.5);
+    --white: #ffffff;
+    /*фон, текст */
+    --light-blue: #81b3d2;
+    /*фон, кнопка найти-подробнее, стрелка нажатие*/
+    --blue: #669ec0;
+    /*наведение*/
+    --dark-blue: #5496bd;
+    /*нажатие*/
+    --basic-grey: #eeeeee;
+    --grey-1: #766357;
+    /*кнопка заинтересовались-забронировать, кнопка рейтинг, "покой"*/
+    --grey-dark-1: #604e43;
+    /*agentнажатие*/
+    --dark-grey: #333333;
+    /*текст р и номера*/
+    --grey-light-1: #eeeeee;
+    /*фон 2го блока причин*/
+    --grey-light-2: #f2f2f2;
+    /*фон полей формы*/
+    --grey-light-3: #cacaca;
+    /*стрелка покой*/
+    --grey: 0, 0, 0, 0.25;
+    /*надписи покой*/
+}
+
+.page_body {
+    width: 1200px;
+    margin: 0px;
+    padding: 40px;
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--black);
+    text-transform: uppercase;
+    background-color: var(--basic-grey);
+}
+
+.page_body .headline {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.text {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.link .contacts {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+
+/* background image */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main_block {
+    /* border: 5px solid red; */
+    width: auto;
+    height: 509px;
+    background: var(--grey-light-3) url("../img/index/background.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome {
+    width: 188px;
+    height: 44px;
+    margin: auto;
+    /* padding-bottom: 0px;
     margin-bottom: 200px;
     margin-top: 10px;
     margin-left: 546px;
     margin-right: 546px;
-    border: 5px solid green;*/
-                             }
-                             
-                             .to_the {
-                                 width: 256px;
-                                 height: 28px;
-                                 margin: auto;
-                                 /* padding-bottom: 0px;
+    border: 5px solid green;
+    */
+}
+
+.to_the {
+    width: 256px;
+    height: 28px;
+    margin: auto;
+    /* padding-bottom: 0px;
     margin-top: -150px;
     margin-left: 472px;
     margin-right: 472px;
-    border: 5px solid blue;*/
-                             }
-                             
-                             .sedona {
-                                 width: 456px;
-                                 height: 213px;
-                                 margin: auto;
-                                 /*margin-top: 77px;
+    border: 5px solid blue; 
+  */
+}
+
+.sedona {
+    width: 456px;
+    height: 213px;
+    margin: auto;
+    /* margin-top: 77px;
     margin-left: 371px;
     margin-right: 371px;
-    border: 5px solid red;*/
-                             }
-                             /*
-div {
-    background-position: absolute;
+    border: 5px solid red; */
 }
-*/
-                             
-                             .inner_page {}
-                             
-                             .inner_block {
-                                 width: 1200 px;
-                                 height: auto;
-                                 background: var(--grey-light-3) url("../img/catalog/background.jpg") no-repeat;
-                                 background-position: center;
-                                 background-size: cover;
-                                 color: var(--white);
-                             }
-                             
-                             .filter .headline {
-                                 font-size: 16px;
-                                 font-weight: 700px;
-                             }
-                             
-                             .checkbox_on {
-                                 text-align: left;
-                                 width: 26px;
-                                 margin: auto;
-                                 border: none;
-                                 background: url("../img/catalog/icons/checkbox-on.svg") no-repeat right, url("../img/minus.svg") no-repeat left;
-                                 background-color: var(--grey-light-2);
-                             }
-                             
-                             .checkbox_off {}
-                             /* main navigation */
-                             
-                             .main_navigation {
-                                 line-height: 26px;
-                                 color: var(--main-black);
-                                 background-color: inherit;
-                                 /*list-style: none;*/
-                                 font-weight: 700;
-                             }
-                             
-                             .main_navigation_wrapper {
-                                 background-color: var(--white);
-                             }
-                             
-                             .site_navigation {
-                                 list-style: none;
-                                 background-color: var(--white);
-                             }
-                             
-                             .site_navigation-current a:not([href]) {
-                                 background-color: var(--black);
-                             }
-                             
-                             .link:hover {
-                                 color: var(--light-blue);
-                             }
-                             
-                             .link:active {
-                                 color: var(--grey-light-3);
-                             }
-                             
-                             .link:focus {
-                                 color: var(--grey-1);
-                             }
-                             
-                             .lead {
-                                 text-align: center;
-                                 line-height: 26px;
-                                 background-color: var(--white);
-                             }
-                             
-                             .lead .text {
-                                 color: var(--dark-grey);
-                             }
-                             
-                             .features_list {
-                                 list-style: none;
-                                 padding: 0px;
-                             }
-                             
-                             .features_wide {
-                                 background-color: var(--light-blue);
-                                 color: var(--white);
-                             }
-                             
-                             .features_item {
-                                 background-color: var(--white);
-                             }
-                             
-                             .features .text {
-                                 color: var(--dark-grey);
-                             }
-                             /* searching_form */
-                             
-                             .text_info {
-                                 line-height: 24px;
-                                 color: var(--dark-grey);
-                             }
-                             
-                             .searching {
-                                 background-color: var(--white);
-                                 text-align: center;
-                             }
-                             
-                             .searching_headline {
-                                 font-size: 30px;
-                                 line-height: 24px;
-                             }
-                             
-                             .button {
-                                 text-align: center;
-                                 vertical-align: middle;
-                                 text-transform: uppercase;
-                                 color: var(--white);
-                                 font-weight: 700;
-                                 border: none;
-                             }
-                             
-                             .button_search {
-                                 background-color: var(--grey-1);
-                                 width: 568px;
-                                 height: 86px;
-                                 font-size: 21px;
-                                 line-height: 26px;
-                             }
-                             
-                             .button_search:hover {
-                                 background-color: var(--grey-dark-1);
-                             }
-                             
-                             .button_search:active {
-                                 background-color: var(--grey-dark-2);
-                             }
-                             
-                             .searching_form {
-                                 line-height: 26px;
-                                 font-weight: 700;
-                                 width: 568px;
-                                 height: 395px;
-                                 margin: auto;
-                             }
-                             
-                             .searching_date {
-                                 width: 346px;
-                                 height: 38px;
-                                 margin: auto;
-                             }
-                             
-                             .searching_number {
-                                 font-weight: 700;
-                                 width: 114px;
-                                 height: 38px;
-                                 margin: auto;
-                                 display: inline;
-                             }
-                             
-                             .field {
-                                 background-color: var(--grey-light-2);
-                                 font-weight: 700;
-                                 border: none;
-                             }
-                             
-                             .plus_minus {
-                                 text-align: center;
-                                 width: 114px;
-                                 margin: auto;
-                                 border: none;
-                                 background: url("../img/plus.svg") no-repeat right, url("../img/minus.svg") no-repeat left;
-                                 background-color: var(--grey-light-2);
-                             }
-                             
-                             .icon_calendar {
-                                 background: url("../img/calendar.svg") no-repeat right;
-                                 background-color: var(--grey-light-2);
-                             }
-                             
-                             .field:hover {
-                                 background-color: #ebebeb;
-                             }
-                             
-                             .field:focus {
-                                 background-color: var(--white);
-                                 border: 2px solid #e5e5e5;
-                             }
-                             
-                             .button_find {
-                                 background-color: var(--light-blue);
-                                 width: 458px;
-                                 height: 58px;
-                                 font-size: 21px;
-                                 line-height: 26px;
-                             }
-                             
-                             .button_find:hover {
-                                 background-color: var(--blue);
-                             }
-                             
-                             .button_find:active {
-                                 background-color: var(--dark-blue);
-                             }
-                             /* footer */
-                             
-                             .main_footer {
-                                 color: var(--black);
-                             }
-                             
-                             .footer_social {
-                                 text-align: center;
-                             }
-                             
-                             .footer_social ul {
-                                 list-style: none;
-                             }
-                             
-                             .social_button {
-                                 background-color: var(--light-blue);
-                             }
-                             
-                             .social_button:hover {
-                                 background-color: var(--blue);
-                             }
-                             
-                             .social_button:active {
-                                 background-color: var(--dark-blue);
-                             }
-                             
-                             .footer_copyright {
-                                 line-height: 26px;
-                                 text-align: right;
-                             }
-                             
-                             .footer_copyright:hover {
-                                 color: var(--light-blue);
-                             }
-                             
-                             .footer_copyright:active {
-                                 color: var(--dark-blue);
-                             }
+
+
+/* main navigation */
+
+.main_navigation {
+    line-height: 26px;
+    color: var(--main-black);
+    background-color: inherit;
+    /*list-style: none;*/
+    font-weight: 700;
+}
+
+.main_navigation_wrapper {
+    background-color: var(--white);
+}
+
+.site_navigation {
+    list-style: none;
+}
+
+.site_navigation-current a:not([href]) {
+    background-color: var(--black);
+}
+
+.link:hover {
+    color: var(--light-blue);
+}
+
+.link:active {
+    color: var(--grey-light-3);
+}
+
+.link:focus {
+    color: var(--grey-1);
+}
+
+.lead {
+    text-align: center;
+    line-height: 26px;
+    background-color: var(--white);
+}
+
+.lead .text {
+    color: var(--dark-grey);
+}
+
+.features_list {
+    list-style: none;
+    padding: 0px;
+}
+
+.features_wide {
+    background-color: var(--light-blue);
+    color: var(--white);
+}
+
+.features_item {
+    background-color: var(--white);
+}
+
+.features .text {
+    color: var(--dark-grey);
+}
+
+
+/* searching_form */
+
+.text_info {
+    line-height: 24px;
+    color: var(--dark-grey);
+}
+
+.searching {
+    background-color: var(--white);
+    text-align: center;
+}
+
+.searching_headline {
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.button {
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+}
+
+.button_search {
+    background-color: var(--grey-1);
+    width: 568px;
+    height: 86px;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.button_search:hover {
+    background-color: var(--grey-dark-1);
+}
+
+.button_search:active {
+    background-color: var(--grey-dark-2);
+}
+
+.searching_form {
+    line-height: 26px;
+    font-weight: 700;
+    width: 568px;
+    height: 395px;
+    margin: auto;
+}
+
+.searching_date {
+    width: 346px;
+    height: 38px;
+    margin: auto;
+}
+
+.searching_number {
+    font-weight: 700;
+    width: 114px;
+    height: 38px;
+    margin: auto;
+    display: inline;
+}
+
+.field {
+    background-color: var(--grey-light-2);
+    font-weight: 700;
+    border: none;
+}
+
+.plus_minus {
+    text-align: center;
+    width: 114px;
+    margin: auto;
+    border: none;
+    background: url("../img/plus.svg") no-repeat right, url("../img/minus.svg") no-repeat left;
+    background-color: var(--grey-light-2);
+}
+
+.icon_calendar {
+    background: url("../img/calendar.svg") no-repeat right;
+    background-color: var(--grey-light-2);
+}
+
+.field:hover {
+    background-color: #ebebeb;
+}
+
+.field:focus {
+    background-color: var(--white);
+    border: 2px solid #e5e5e5;
+}
+
+.button_find {
+    background-color: var(--light-blue);
+    width: 458px;
+    height: 58px;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.button_find:hover {
+    background-color: var(--blue);
+}
+
+.button_find:active {
+    background-color: var(--dark-blue);
+}
+
+
+/* footer */
+
+.main_footer {
+    color: var(--black);
+}
+
+.footer_social {
+    text-align: center;
+}
+
+.footer_social ul {
+    list-style: none;
+}
+
+.social_button {
+    background-color: var(--light-blue);
+}
+
+.social_button:hover {
+    background-color: var(--blue);
+}
+
+.social_button:active {
+    background-color: var(--dark-blue);
+}
+
+.footer_copyright {
+    line-height: 26px;
+    text-align: right;
+}
+
+.footer_copyright:hover {
+    color: var(--light-blue);
+}
+
+.footer_copyright:active {
+    color: var(--dark-blue);
+}
+
+
+/*********************************************************************************************************************************/
+
+.inner_block {
+    width: 1200px;
+    height: auto;
+    background: var(--grey-light-3) url("../img/catalog/background.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+
+.filter .headline {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.checkbox_on {
+    text-align: left;
+    width: 26px;
+    margin: auto;
+    border: none;
+    background: url("../img/catalog/icons/checkbox-on.svg") no-repeat left;
+}
+
+
+/* .checkbox_off {} */
+
+.sort {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--black);
+}
+
+.sort_filter {
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sort_link {
+    text-decoration: underline;
+    color: var(--semi-black);
+}
+
+.sort_link:hover {
+    color: var(--light-blue);
+    text-decoration: underline;
+}
+
+.sort_link:active {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.sort_link:focus {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+
+/*List 0f houses*/
