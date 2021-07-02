@@ -25,6 +25,7 @@
     /*стрелка покой*/
     --grey: 0, 0, 0, 0.25;
     /*надписи покой*/
+    --brown: #503E33;
 }
 
 .page_body {
@@ -56,7 +57,7 @@
     font-weight: 700;
 }
 
-.link .contacts {
+.contacts {
     font-size: 21px;
     line-height: 26px;
 }
@@ -329,6 +330,10 @@ img {
 
 /*********************************************************************************************************************************/
 
+.page_body {
+    background-color: var(--white);
+}
+
 .inner_block {
     width: 1200px;
     height: auto;
@@ -344,30 +349,47 @@ img {
 }
 
 .checkbox_on {
-    text-align: left;
+    /* text-align: left;
     width: 26px;
     margin: auto;
     border: none;
-    background: url("../img/catalog/icons/checkbox-on.svg") no-repeat left;
+    background: url("../img/catalog/icons/checkbox-on.svg") no-repeat left;*/
 }
 
 
 /* .checkbox_off {} */
 
-.sort {
+.sort
+/*section*/
+
+{
     font-size: 12px;
     line-height: 18px;
     color: var(--black);
 }
 
-.sort_filter {
+.sort_headline
+/*h2*/
+
+{
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.sort_filter
+/*ul*/
+
+{
     list-style: none;
     text-decoration: none;
     font-size: 12px;
     line-height: 18px;
 }
 
-.sort_link {
+.sort_link
+/*a*/
+
+{
     text-decoration: underline;
     color: var(--semi-black);
 }
@@ -388,4 +410,75 @@ img {
 }
 
 
-/*List 0f houses*/
+/*************************************List 0f houses*/
+
+.list
+/*section*/
+
+{
+    color: var(--black);
+}
+
+.list_of_houses
+/*ul*/
+
+{
+    list-style: none;
+    text-decoration: none;
+}
+
+.list_link
+/*a h3*/
+
+{
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.button_inner {
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+}
+
+.button_details {
+    background-color: var(--light-blue);
+    width: 124px;
+    height: 27px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.button_details:hover {
+    background-color: var(--blue);
+}
+
+.button_details:active {
+    background-color: var(--dark-blue);
+}
+
+.button_reserv {
+    background-color: var(--grey-1);
+    width: 142px;
+    height: 27px;
+}
+
+.button_reserv:hover {
+    background-color: var(--grey-dark-1);
+}
+
+.button_reserv:active {
+    background-color: var(--brown);
+}
+
+.button_rating {
+    background-color: var(--grey-light-2);
+    color: var(--semi-black);
+    font-weight: 400;
+    text-align: left;
+}
