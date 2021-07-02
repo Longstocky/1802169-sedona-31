@@ -120,7 +120,7 @@ img {
 .main_navigation {
     line-height: 26px;
     color: var(--main-black);
-    background-color: inherit;
+    background-color: var(--white);
     /*list-style: none;*/
     font-weight: 700;
 }
@@ -292,6 +292,7 @@ img {
 
 .main_footer {
     color: var(--black);
+    background-color: var(--white);
 }
 
 .footer_social {
@@ -330,9 +331,12 @@ img {
 
 /*********************************************************************************************************************************/
 
-.page_body {
+
+/*.inner_body {
     background-color: var(--white);
-}
+
+
+}*/
 
 .inner_block {
     width: 1200px;
@@ -341,6 +345,7 @@ img {
     background-position: center;
     background-size: cover;
     color: var(--white);
+    background-color: var(--white);
 }
 
 .filter .headline {
@@ -366,6 +371,7 @@ img {
     font-size: 12px;
     line-height: 18px;
     color: var(--black);
+    background-color: var(--white);
 }
 
 .sort_headline
@@ -417,6 +423,11 @@ img {
 
 {
     color: var(--black);
+    background-color: var(--white);
+}
+
+.text_list {
+    color: var(--dark-grey);
 }
 
 .list_of_houses
@@ -480,5 +491,4 @@ img {
     background-color: var(--grey-light-2);
     color: var(--semi-black);
     font-weight: 400;
-    text-align: left;
 }
