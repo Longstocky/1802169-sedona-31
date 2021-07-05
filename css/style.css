@@ -85,6 +85,14 @@
 
 /***************************************** background image ****************************/
 
+.wrapper_block {
+    outline: 5px solid black;
+}
+
+.wrapper_lead {
+    outline: 5px solid black;
+}
+
 .main_block {
     /* border: 5px solid red; */
     width: auto;
@@ -136,14 +144,10 @@
     margin-bottom: 70px;
     outline: 5px solid rgba(0, 255, 0, 0.7);
     margin-bottom: 0;
-    /* width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px; */
 }
 
 .main_navigation {
     display: grid;
-    /* grid-template-columns: 266px 266px 1fr 266px 266px; */
     line-height: 26px;
     color: var(--main-black);
     background-color: var(--white);
@@ -151,7 +155,6 @@
 }
 
 .main_header_logo {
-    /* display: grid; */
     order: 1;
     justify-self: center;
     outline: 5px solid rgba(255, 0, 0, 0.3);
@@ -163,7 +166,7 @@
     grid-template-columns: 1fr min-content;
     background-color: var(--white);
     margin: 0;
-    padding: 0 10px;
+    padding: 0 72px;
 }
 
 .site_navigation {
@@ -203,23 +206,43 @@
 
 /********************************features**************************/
 
-
-/* .wrapper_features {
-    outline: 5px solid rgba(255, 0, 0, 0.3);
-} */
+.wrapper_features {
+    outline: 5px solid black;
+}
 
 .features_list {
     list-style: none;
     padding: 0px;
 }
 
-.features_wide {
-    background-color: var(--light-blue);
-    color: var(--white);
-}
+
+/*li*/
 
 .features_item {
     background-color: var(--white);
+    outline: 5px solid red;
+    outline-offset: -5px;
+    /* text-align: center; */
+}
+
+
+/*li*/
+
+.features_wide {
+    background-color: var(--light-blue);
+    color: var(--white);
+    outline: 5px solid red;
+    outline-offset: -5px;
+    text-align: center;
+}
+
+
+/*li*/
+
+.features {
+    outline: 5px solid red;
+    outline-offset: -5px;
+    /* text-align: center; */
 }
 
 .features .text {
@@ -228,6 +251,10 @@
 
 
 /* searching_form */
+
+.wrapper_searching {
+    outline: 5px solid black
+}
 
 .text_info {
     line-height: 24px;
@@ -337,12 +364,19 @@
 }
 
 
+/********************************************map**************************/
+
+.wrapper_map {
+    outline: 5px solid black;
+}
+
+
 /******************************************* footer ***************************/
 
 .main_footer {
     color: var(--black);
     background-color: var(--white);
-    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline: 5px solid black;
     outline-offset: -5px;
     /* width: 1200px;
     margin: 0, auto;
