@@ -135,6 +135,7 @@
 .main_header {
     margin-bottom: 70px;
     outline: 5px solid rgba(0, 255, 0, 0.7);
+    margin-bottom: 0;
     /* width: 1200px;
     margin: 0 auto;
     padding: 0 40px; */
@@ -150,7 +151,8 @@
 }
 
 .main_header_logo {
-    display: grid;
+    /* display: grid; */
+    order: 1;
     justify-self: center;
     outline: 5px solid rgba(255, 0, 0, 0.3);
     outline-offset: -5px;
@@ -158,11 +160,15 @@
 
 .main_navigation_wrapper {
     display: grid;
-    /* grid-template-columns: 266px 266px 1fr 266px 266px; */
+    grid-template-columns: 1fr min-content;
     background-color: var(--white);
+    margin: 0;
+    padding: 0 10px;
 }
 
 .site_navigation {
+    margin: 0;
+    padding: 0;
     list-style: none;
     outline: 5px solid rgba(0, 255, 255, 0.3);
     outline-offset: -5px;
