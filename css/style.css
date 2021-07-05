@@ -25,13 +25,14 @@
     /*стрелка покой*/
     --grey: 0, 0, 0, 0.25;
     /*надписи покой*/
-    --brown: #503E33;
+    --brown: #503e33;
 }
 
 .page_body {
     width: 1200px;
     margin: 0px;
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-family: "PTSans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -42,7 +43,7 @@
     /* grids */
     min-height: 100%;
     display: grid;
-    grid-template-rows: min-content 1fr min-content;
+    /* grid-template-rows: ; */
     align-content: start;
 }
 
@@ -60,6 +61,7 @@
     text-decoration: none;
     color: var(--black);
     font-weight: 700;
+    grid-column: 1/4;
 }
 
 .contacts {
@@ -68,151 +70,151 @@
 }
 
 
-/* background image */
+/* img {
+                     max-width: 100%;
+                    height: auto;
+                } */
 
-img {
-    max-width: 100%;
-    height: auto;
+
+/* .wrapper {
+    width: 1200px;
+    /* margin: auto; */
+
+outline: 5px solid black;
+
 }
-
-.main_header {
-    margin-bottom: 70px;
-    /* outline: 5px solid rgba(0, 255, 0, 0.7); */
-    /* outline-offset: -5px;*/
-}
-
-
-/*.main_header_logo {
-    outline: 5px solid rgba(255, 0, 0, 0.3);
-    outline-offset: -5px;
-}*/
-
+*/
+/***************************************** background image ****************************/
 .main_block {
     /* border: 5px solid red; */
+    
     width: auto;
     height: 509px;
     background: var(--grey-light-3) url("../img/index/background.jpg") no-repeat;
     background-position: center;
     background-size: cover;
 }
-
 .welcome {
     width: 188px;
     height: 44px;
     margin: auto;
     /* padding-bottom: 0px;
-    margin-bottom: 200px;
-    margin-top: 10px;
-    margin-left: 546px;
-    margin-right: 546px;
-    border: 5px solid green;
-    */
+   margin-bottom: 200px;
+   margin-top: 10px;
+   margin-left: 546px;
+   margin-right: 546px;
+   border: 5px solid green;
+                    */
 }
-
 .to_the {
     width: 256px;
     height: 28px;
     margin: auto;
     /* padding-bottom: 0px;
-    margin-top: -150px;
-    margin-left: 472px;
-    margin-right: 472px;
-    border: 5px solid blue; 
-  */
+                    margin-top: -150px;
+                    margin-left: 472px;
+                        margin-right: 472px;
+                    border: 5px solid blue; 
+                    */
 }
-
 .sedona {
     width: 456px;
     height: 213px;
     margin: auto;
     /* margin-top: 77px;
-    margin-left: 371px;
-    margin-right: 371px;
-    border: 5px solid red; */
+                        margin-left: 371px;
+                        margin-right: 371px;
+                    border: 5px solid red; */
 }
 
-
-/* main navigation */
-
+/************************************ main navigation *******************************/
+.main_header {
+    margin-bottom: 70px;
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    /* width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px; */
+}
 .main_navigation {
+    display: grid;
+    /* grid-template-columns: 266px 266px 1fr 266px 266px; */
+    
     line-height: 26px;
     color: var(--main-black);
     background-color: var(--white);
-    /*list-style: none;*/
     font-weight: 700;
-    display: grid;
 }
-
+.main_header_logo {
+    display: grid;
+    justify-self: center;
+    outline: 5px solid rgba(255, 0, 0, 0.3);
+    outline-offset: -5px;
+}
 .main_navigation_wrapper {
+    display: grid;
+    /* grid-template-columns: 266px 266px 1fr 266px 266px; */
+    
     background-color: var(--white);
 }
-
 .site_navigation {
     list-style: none;
+    outline: 5px solid rgba(0, 255, 255, 0.3);
+    outline-offset: -5px;
 }
-
 .site_navigation-current a:not([href]) {
     background-color: var(--black);
 }
-
 .link:hover {
     color: var(--light-blue);
 }
-
 .link:active {
     color: var(--grey-light-3);
 }
-
 .link:focus {
     color: var(--grey-1);
 }
-
 .lead {
     text-align: center;
     line-height: 26px;
     background-color: var(--white);
 }
-
 .lead .text {
     color: var(--dark-grey);
 }
 
+/********************************features**************************/
+
+/* .wrapper_features {
+    outline: 5px solid rgba(255, 0, 0, 0.3);
+} */
 .features_list {
     list-style: none;
-    padding: 0px;
+    /* padding: 0px; */
 }
-
 .features_wide {
     background-color: var(--light-blue);
     color: var(--white);
 }
-
 .features_item {
     background-color: var(--white);
 }
-
 .features .text {
     color: var(--dark-grey);
 }
 
-
 /* searching_form */
-
 .text_info {
     line-height: 24px;
     color: var(--dark-grey);
 }
-
 .searching {
     background-color: var(--white);
     text-align: center;
 }
-
 .searching_headline {
     font-size: 30px;
     line-height: 24px;
 }
-
 .button {
     text-align: center;
     vertical-align: middle;
@@ -221,7 +223,6 @@ img {
     font-weight: 700;
     border: none;
 }
-
 .button_search {
     background-color: var(--grey-1);
     width: 568px;
@@ -229,15 +230,12 @@ img {
     font-size: 21px;
     line-height: 26px;
 }
-
 .button_search:hover {
     background-color: var(--grey-dark-1);
 }
-
 .button_search:active {
     background-color: var(--grey-dark-2);
 }
-
 .searching_form {
     line-height: 26px;
     font-weight: 700;
@@ -245,13 +243,11 @@ img {
     height: 395px;
     margin: auto;
 }
-
 .searching_date {
     width: 346px;
     height: 38px;
     margin: auto;
 }
-
 .searching_number {
     font-weight: 700;
     width: 114px;
@@ -259,13 +255,11 @@ img {
     margin: auto;
     display: inline;
 }
-
 .field {
     background-color: var(--grey-light-2);
     font-weight: 700;
     border: none;
 }
-
 .plus_minus {
     text-align: center;
     width: 114px;
@@ -274,21 +268,17 @@ img {
     background: url("../img/plus.svg") no-repeat right, url("../img/minus.svg") no-repeat left;
     background-color: var(--grey-light-2);
 }
-
 .icon_calendar {
     background: url("../img/calendar.svg") no-repeat right;
     background-color: var(--grey-light-2);
 }
-
 .field:hover {
     background-color: #ebebeb;
 }
-
 .field:focus {
     background-color: var(--white);
     border: 2px solid #e5e5e5;
 }
-
 .button_find {
     background-color: var(--light-blue);
     width: 458px;
@@ -296,66 +286,54 @@ img {
     font-size: 21px;
     line-height: 26px;
 }
-
 .button_find:hover {
     background-color: var(--blue);
 }
-
 .button_find:active {
     background-color: var(--dark-blue);
 }
 
-
-/* footer */
-
+/******************************************* footer ***************************/
 .main_footer {
     color: var(--black);
     background-color: var(--white);
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+    /* width: 1200px;
+    margin: 0, auto;
+    padding: 0 40px; */
 }
-
 .footer_social {
     text-align: center;
 }
-
 .footer_social ul {
     list-style: none;
 }
-
 .social_button {
     background-color: var(--light-blue);
 }
-
 .social_button:hover {
     background-color: var(--blue);
 }
-
 .social_button:active {
     background-color: var(--dark-blue);
 }
-
 .footer_copyright {
     line-height: 26px;
     text-align: right;
 }
-
 .footer_copyright:hover {
     color: var(--light-blue);
 }
-
 .footer_copyright:active {
     color: var(--dark-blue);
 }
 
-
-/*********************************************************************************************************************************/
-
+/***n */
 
 /*.inner_body {
-    background-color: var(--white);
-
-
-}*/
-
+  background-color: var(--white);}
+*/
 .inner_block {
     width: 1200px;
     height: auto;
@@ -365,107 +343,85 @@ img {
     color: var(--white);
     background-color: var(--white);
 }
-
 .filter .headline {
     font-size: 16px;
     font-weight: 700;
 }
-
 .checkbox_on {
+    text-align: left;
     /* text-align: left;
-    width: 26px;
-    margin: auto;
-    border: none;
-    background: url("../img/catalog/icons/checkbox-on.svg") no-repeat left;*/
+   width: 26px;
+  margin: auto;
+  border: none;
+  background: url("../img/catalog/icons/checkbox-on.svg") no-repeat left;*/
 }
-
 
 /* .checkbox_off {} */
 
-.sort
-/*section*/
-
-{
+/* section */
+.sort {
     font-size: 12px;
     line-height: 18px;
     color: var(--black);
     background-color: var(--white);
 }
 
-.sort_headline
 /*h2*/
-
-{
+.sort_headline {
     font-size: 21px;
     line-height: 26px;
 }
 
-.sort_filter
 /*ul*/
-
-{
+.sort_filter {
     list-style: none;
     text-decoration: none;
     font-size: 12px;
     line-height: 18px;
 }
 
-.sort_link
 /*a*/
-
-{
+.sort_link {
     text-decoration: underline;
     color: var(--semi-black);
 }
-
 .sort_link:hover {
     color: var(--light-blue);
     text-decoration: underline;
 }
-
 .sort_link:active {
     color: var(--black);
     text-decoration: none;
 }
-
 .sort_link:focus {
     color: var(--light-blue);
     text-decoration: none;
 }
 
+/************************************* List 0f houses */
 
-/*************************************List 0f houses*/
-
-.list
 /*section*/
-
-{
+.list {
     color: var(--black);
     background-color: var(--white);
 }
-
 .text_list {
     color: var(--dark-grey);
 }
 
-.list_of_houses
 /*ul*/
-
-{
+.list_of_houses {
     list-style: none;
     text-decoration: none;
 }
 
-.list_link
 /*a h3*/
-
-{
+.list_link {
     font-size: 21px;
     line-height: 26px;
     color: var(--black);
     text-decoration: none;
 }
-
 .button_inner {
     text-align: center;
     vertical-align: middle;
@@ -474,7 +430,6 @@ img {
     font-weight: 700;
     border: none;
 }
-
 .button_details {
     background-color: var(--light-blue);
     width: 124px;
@@ -482,41 +437,32 @@ img {
     padding: 5px 10px;
     text-decoration: none;
 }
-
 .button_details:hover {
     background-color: var(--blue);
 }
-
 .button_details:active {
     background-color: var(--dark-blue);
 }
-
 .button_reserv {
     background-color: var(--grey-1);
     width: 142px;
     height: 27px;
 }
-
 .button_reserv:hover {
     background-color: var(--grey-dark-1);
 }
-
 .button_reserv:active {
     background-color: var(--brown);
 }
-
 .button_rating {
     background-color: var(--grey-light-2);
     color: var(--semi-black);
     font-weight: 400;
 }
 
-
 /*************************************************************************Grids**********/
-
 .page {
     height: 100%;
 }
-
 
 /*html занимает всё окно 100% */
