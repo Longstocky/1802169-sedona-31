@@ -47,14 +47,16 @@
 
             <div class="wrapper_features">
                 <ul class="features_list">
-                    <li class="features_wide">
-                        <div class="reason_1">
-                            <h3 class="headline">Настоящий городок</h3>
-                            <p class="text_wide">-№1-</p>
-                            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                        </div>
-                        <div class="reason_1_a"><img src="img/index/reason1.jpg" width="800" height="256" alt="Вид на террасу дома и горы"></div>
+                    <li class="features_wide reason_1">
+                        <h3 class="headline">Настоящий городок</h3>
+                        <p class="text_wide">-№1-</p>
+                        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                     </li>
+
+                    <li class="reason_1_a">
+                        <img src="img/index/reason1.jpg" width="800" height="256" alt="Вид на террасу дома и горы">
+                    </li>
+
                     <li class="features_item item_1">
                         <div><img src="img/index/icons/house.svg" width="75" height="72" alt="иконка домика"></div>
                         <h3 class="headline">Жильё</h3>
@@ -70,14 +72,16 @@
                         <h3 class="headline">Сувениры</h3>
                         <p class="text_item">Не только китайского, но и местного производства!</p>
                     </li>
-                    <li class="features_wide">
-                        <div class="reason_2">
-                            <h3 class="headline">Там есть мост дьявола</h3>
-                            <p class="text_wide">-№2-</p>
-                            <p class="text_wide">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                        </div>
-                        <div class="reason_2_a"><img src="img/index/reason2.jpg" width="800" height="256" alt="Скалистый пейзаж "></div>
+
+                    <li class="features_wide reason_2">
+                        <h3 class="headline">Там есть мост дьявола</h3>
+                        <p class="text_wide">-№2-</p>
+                        <p class="text_wide">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </li>
+                    <li class="reason_2_a">
+                        <img src="img/index/reason2.jpg" width="800" height="256" alt="Скалистый пейзаж ">
+                    </li>
+
                     <li class="features reason_3">
                         <h3 class="headline">Небольшая площадь</h3>
                         <p class="text_item">-№3-</p>
@@ -95,12 +99,14 @@
                     </li>
                 </ul>
             </div>
-            <section class="wrapper_searching searching">
-                <h2 class="searching_headline">Заинтересовались?</h2>
-                <p class="text_info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
-                </p>
-                <button class="button button_search" type="button">поиск гостиницы в седоне</button>
 
+            <section class="wrapper_searching searching">
+                <div class="form_close">
+                    <h2 class="searching_headline">Заинтересовались?</h2>
+                    <p class="text_info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
+                    </p>
+                    <button class="button button_search" type="button">поиск гостиницы в седоне</button>
+                </div>
                 <form class="searching_form" action="https://echo.htmlacademy.ru" method="post">
                     <fieldset>
                         <label for="entry_date">Дата заезда</label>
@@ -117,8 +123,8 @@
                         <div class="searching_number"><input class="field plus_minus" type="number" id="adults" name="adults" min="1" max="1" value="2">
                         </div>
 
-                        <label for="children ">Дети:</label>
-                        <div class="searching_number"><input class="field plus_minus" type="number" id="children" name="children" min="1 " max="10" value="0"></div>
+                        <label for="children">Дети:</label>
+                        <div class="searching_number"><input class="field plus_minus" type="number" id="children" name="children" min="1" max="10" value="0"></div>
 
                         <button class="button button_find" type="submit">найти</button>
                     </fieldset>
@@ -135,15 +141,15 @@
 
 
         <footer class="main_footer">
-            <section class="footer_contacts">
+            <div class="footer_contacts">
                 <h2 class="wisually_hidden">Контакты</h2>
                 <p><a class="link contacts" href="#">#VisitSedona</a><br>
                     <a class="link contacts" href="tel:+78005558628">+7 800 555-86-28</a>
                 </p>
-            </section>
-            <section class="footer_social">
-                <h2 class="wisually_hidden ">СоцСети</h2>
-                <ul>
+            </div>
+            <div class="footer_social">
+                <!-- <h2 class="wisually_hidden ">СоцСети</h2> -->
+                <ul class="footer_social">
                     <li>
                         <a class="social_button " href="#"><img src="img/iconsSocial/twitter.svg" alt="twitter "></a>
                     </li>
@@ -154,10 +160,12 @@
                         <a class="social_button " href="#"><img src="img/iconsSocial/youtube.svg" alt="youtube "></a>
                     </li>
                 </ul>
-            </section>
-            <p class="footer_copyright ">WEBSITE BY
-                <a href="https://htmlacademy.ru"><img src="img/logo_htmlacademy.svg" alt="Логотип html академии"></a>
-            </p>
+            </div>
+            <div class "copyright">
+                <p class="footer_copyright ">WEBSITE BY
+                    <a href="https://htmlacademy.ru"><img src="img/logo_htmlacademy.svg" alt="Логотип html академии"></a>
+                </p>
+            </div>
         </footer>
     </div>
 </body>
