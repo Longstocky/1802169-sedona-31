@@ -146,8 +146,8 @@
     /* left: 50%;
     transform: translateX(-50%); */
     z-index: 1;
-    */ outline: 5px solid rgba(255, 0, 0, 0.3);
-    outline-offset: -5px;
+    /* outline: 5px solid rgba(255, 0, 0, 0.3);
+    outline-offset: -5px;*/
 }
 
 .site_navigation {
@@ -158,15 +158,15 @@
     padding: 0 72px;
     list-style: none;
     min-height: 58px;
-    outline: 5px solid rgba(0, 255, 255, 0.3);
-    outline-offset: -5px;
+    /* outline: 5px solid rgba(0, 255, 255, 0.3);
+    outline-offset: -5px; */
 }
 
 .site_navigation-current a:not([href]) {
     background-color: var(--black);
 }
 
-.link {
+.link_menu {
     display: flex;
     align-items: center;
     text-align: left;
