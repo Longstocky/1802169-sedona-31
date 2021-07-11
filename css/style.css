@@ -136,6 +136,7 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     margin: 0;
+    position: relative;
 }
 
 .main_header_logo {
@@ -143,11 +144,12 @@
     height: 70px;
     order: 1;
     position: absolute;
-    /* left: 50%;
-    transform: translateX(-50%); */
     z-index: 1;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
     /* outline: 5px solid rgba(255, 0, 0, 0.3);
-    outline-offset: -5px;*/
+    outline-offset: -5px; */
 }
 
 .site_navigation {
