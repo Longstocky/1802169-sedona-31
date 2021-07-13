@@ -25,73 +25,73 @@
             </nav>
         </header>
 
-        <main>
+        <main class=page_catalog>
 
-            <div class="main_inner">
-                <div class="inner_block">
-                    <section class="wisually_hidden" hidden>
-                        <h2>Выбор жилья</h2>
-                    </section>
-                    <form class="filter" action="https://echo.htmlacademy.ru" method="post">
-                        <fieldset class="filter_include">
-                            <legend class="headline">Инфраструктура:</legend>
-                            <div>
-                                <input class="checkbox_on" type="checkbox" name="swimpool" id="swimpool" checked>
-                                <label for="swimpool">Бассейн</label>
-                            </div>
-                            <div>
-                                <input class="checkbox_off" type="checkbox" name="parking" id="parking">
-                                <label for="parking">Парковка</label>
-                            </div>
-                            <div>
-                                <input class="checkbox_off" type="checkbox" name="wi-fi" id="wi-fi">
-                                <label for="wi-fi">wi-fi</label>
-                            </div>
-                        </fieldset>
-                        <fieldset class="filter_description">
-                            <legend class="headline">Тип жилья:</legend>
-                            <div>
-                                <input class="checkbox_on" type="checkbox" name="hotel " id="hotel" checked>
-                                <label for="hotel">Гостиница</label>
-                            </div>
-                            <div>
-                                <input class="checkbox_on" type="checkbox" name="motel" id="motel" checked>
-                                <label for="motel">Мотель</label>
-                            </div>
-                            <div>
-                                <input class="checkbox_on" type="checkbox" name="apartments" id="apartments" checked>
-                                <label for="apartments">Апартаменты</label>
-                            </div>
-                        </fieldset>
-                        <fieldset class="filter_price">
-                            <legend class="headline">Стоимость в сутки, Р</legend>
-                            <input type="text" value="От 0 " required>
-                            <input type="text" value="До 3000" required> 0
-                            <input type="range" min="0" max="3000">3000
-                            <button type="submit">Показать</button>
-                        </fieldset>
-                    </form>
-                </div>
+            <div class="inner_block">
+                <h2 class="wisually_hidden" hidden>Выбор жилья</h2>
+                <form class="filter_form" action="https://echo.htmlacademy.ru" method="post">
+                    <fieldset class="filter_include filter">
+                        <legend class="headline">Инфраструктура:</legend>
+                        <div>
+                            <input class="checkbox_on" type="checkbox" name="swimpool" id="swimpool" checked>
+                            <label for="swimpool">Бассейн</label>
+                        </div>
+                        <div>
+                            <input class="checkbox_off" type="checkbox" name="parking" id="parking">
+                            <label for="parking">Парковка</label>
+                        </div>
+                        <div>
+                            <input class="checkbox_off" type="checkbox" name="wi-fi" id="wi-fi">
+                            <label for="wi-fi">wi-fi</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="filter_description filter">
+                        <legend class="headline">Тип жилья:</legend>
+                        <div>
+                            <input class="checkbox_on" type="checkbox" name="hotel " id="hotel" checked>
+                            <label for="hotel">Гостиница</label>
+                        </div>
+                        <div>
+                            <input class="checkbox_on" type="checkbox" name="motel" id="motel" checked>
+                            <label for="motel">Мотель</label>
+                        </div>
+                        <div>
+                            <input class="checkbox_on" type="checkbox" name="apartments" id="apartments" checked>
+                            <label for="apartments">Апартаменты</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="filter_price filter">
+                        <legend class="headline">Стоимость в сутки, ₽</legend>
+                        <input type="text" value="От 0 " required>
+                        <input type="text" value="До 3000" required> 0
+                        <input type="range" min="0" max="3000">3000
+                        <button type="submit">Показать</button>
+                    </fieldset>
+                </form>
             </div>
 
             <section class="sort">
-                <h2 class="sort_headline">Найдено: 3</h2>
-                <p class="sort_filter">Сортировка:</p>
-                <ul class="sort_filter">
-                    <li>
-                        <a class="sort_link" href="#">По цене</a>
-                    </li>
-                    <li>
-                        <a class="sort_link" href="#">По типу</a>
-                    </li>
-                    <li>
-                        <a class="sort_link" href="#">По рейтингу</a>
-                    </li>
-                    <li>
-                        <a href="#" class=" "><img src="img/catalog/icons/iconUp.svg " alt="стрелка вверх "></a>
-                        <a href="#" class=" "><img src="img/catalog/icons/iconDown.svg " alt="стрелка вниз "></a>
-                    </li>
-                </ul>
+                <div class="sort_wrapper">
+                    <h2 class="sort_headline">Найдено: 3</h2>
+                    <p class="sort_filter">Сортировка:</p>
+                    <ul class="sort_filter">
+                        <li>
+                            <a class="sort_link" href="#">По цене</a>
+                        </li>
+                        <li>
+                            <a class="sort_link" href="#">По типу</a>
+                        </li>
+                        <li>
+                            <a class="sort_link" href="#">По рейтингу</a>
+                        </li>
+                        <li>
+                            <a href="#" class=" "><img src="img/catalog/icons/iconUp.svg " alt="стрелка вверх "></a>
+                            <a href="#" class=" "><img src="img/catalog/icons/iconDown.svg " alt="стрелка вниз "></a>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section class="list">
@@ -103,7 +103,7 @@
                         </a>
                         <p><img src="img/catalog/spa.jpg" width="135" height="90" alt="спа на фоне гор"></p>
                         <p class="text_list">Гостиница</p>
-                        <p class="text_list">От 4000 Р</p>
+                        <p class="text_list">От 4000 ₽</p>
                         <a class="button_inner button_details" href="blank.html">Подробнее</a>
                         <button class="button_inner button_reserv" type="button">Забронировать</button>
                         <!--<input type="radio " id="star-4 " name="rating " value="4 ">
@@ -120,7 +120,7 @@
                         </a>
                         <p><img src="img/catalog/desert.jpg" width="135" height="90" alt="фото придорожной гостиница"></p>
                         <p class="text_list">Мотель</p>
-                        <p class="text_list">От 3000 Р</p>
+                        <p class="text_list">От 3000 ₽</p>
                         <a class="button_inner button_details" href="blank.html">Подробнее</a>
                         <button class="button_inner button_reserv" type="button">Забронировать</button>
                         <!--<input type="radio " id="star-3 " name="rating " value="3 ">
@@ -136,7 +136,7 @@
                         </a>
                         <p><img src="img/catalog/villas.jpg" width="135" height="90" alt="фото виллы среди деревьев в поле"></p>
                         <p class="text_list">Апартаменты</p>
-                        <p class="text_list">От 2000 Р</p>
+                        <p class="text_list">От 2000 ₽</p>
                         <a class="button_inner button_details" href="blank.html">Подробнее</a>
                         <button class="button_inner button_reserv" type="button">Забронировать</button>
                         <!--<input type="radio " id="star-2 " name="rating " value="2 ">
