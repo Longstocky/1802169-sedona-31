@@ -458,12 +458,7 @@
 }
 
 
-/* n */
-
-
-/* .inner_body { 
-                            background-color: var(--white);}
-                                */
+/******************************************************catalog************************************/
 
 .inner_block {
     width: 1200px;
@@ -473,6 +468,10 @@
     background-size: cover;
     color: var(--white);
     background-color: var(--white);
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 .filter .headline {
