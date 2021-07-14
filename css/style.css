@@ -535,6 +535,8 @@
     color: var(--black);
     background-color: var(--white);
     margin-bottom: 37px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .sort_wrapper {
@@ -544,7 +546,6 @@
     /* grid-template-columns: 212px 117px 90px 80px 160px 540px; */
     grid-template-columns: 72px 163px 117px 79px 82px 503px 110px 73px;
     list-style: none;
-    margin: 0 auto;
 }
 
 
@@ -678,6 +679,7 @@
     list-style: none;
     text-decoration: none;
     padding: 0;
+    margin: 0 auto;
 }
 
 
