@@ -537,8 +537,10 @@
 }
 
 .sort_wrapper {
-    margin-left: 72px;
+    /* margin-left: 72px; */
     display: flex;
+    /* justify-content: space-between; */
+    outline: 5px solid black;
 }
 
 
@@ -549,6 +551,11 @@
     line-height: 26px;
 }
 
+.sort_filter_text {
+    font-size: 12px;
+    line-height: 18px;
+}
+
 
 /*ul*/
 
@@ -557,8 +564,11 @@
     text-decoration: none;
     font-size: 12px;
     line-height: 18px;
+    /**/
     display: flex;
-    justify-content: space-around
+    flex-direction: row;
+    justify-content: space-between;
+    outline: 5px solid red;
 }
 
 
