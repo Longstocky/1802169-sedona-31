@@ -30,7 +30,6 @@
 
 .page_body {
     width: 1280px;
-    margin: 0px;
     padding-left: 40px;
     padding-right: 40px;
     font-family: "PTSans", Arial, sans-serif;
@@ -66,14 +65,16 @@
 
 
 /* img {
-                             max-width: 100%;
-                                height: auto;
-                             } */
+    max-width: 100%;
+    height: auto;
+    /* display: block; 
+} */
 
 .wrapper {
     width: 1200px;
     margin: 0;
     padding: 0 40px;
+    margin: 0 auto;
     outline: 5px solid black;
 }
 
@@ -469,8 +470,8 @@
     color: var(--white);
     background-color: var(--white);
     min-height: 100%;
-    display: grid;
-    align-content: start;
+    /* display: grid;
+    align-content: start; */
 }
 
 .page_catalog {
@@ -536,12 +537,12 @@
 }
 
 .sort_wrapper {
-    min-height: 87px;
+    width: 1200px;
+    height: 87px;
     display: grid;
-    grid-template-columns: 209px 117px 90px 80px 160px 540px;
+    grid-template-columns: 212px 117px 90px 80px 160px 540px;
     list-style: none;
-    margin: 0 auto;
-    padding: 0 72px;
+    /* margin: 0 auto; */
     outline: 5px solid black;
 }
 
@@ -551,11 +552,13 @@
 .sort_headline {
     font-size: 21px;
     line-height: 26px;
+    padding: 0 72px;
 }
 
 .sort_filter_text {
     font-size: 12px;
     line-height: 18px;
+    text-align: center;
 }
 
 
@@ -606,10 +609,40 @@
 .list {
     color: var(--black);
     background-color: var(--white);
+    outline: 5px solid black;
+    display: grid;
+}
+
+.hotel {
+    display: grid;
+    grid-template-columns: 73px 135px 28px 111px 6px 142px 522px 110px 73px;
+    grid-template-rows: 44px 49px 27px 31px;
+}
+
+.spa {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.amara {
+    grid-row: 1/2;
+    grid-column: 4/7;
+}
+
+.gost {
+    grid-column: 4/5;
+}
+
+.price {
+    grid-column: 4/5;
 }
 
 .text_list {
     color: var(--dark-grey);
+}
+
+.button_details {
+    grid-column: 4/5;
 }
 
 
@@ -659,6 +692,7 @@
     background-color: var(--grey-1);
     width: 142px;
     height: 27px;
+    /* grid-column: 5/6; */
 }
 
 .button_reserv:hover {
