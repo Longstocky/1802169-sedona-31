@@ -80,7 +80,6 @@
     margin: 0;
     padding: 0 40px;
     margin: 0 auto;
-    /* outline: 5px solid black; */
 }
 
 
@@ -209,7 +208,7 @@
 /********************************features**************************/
 
 .wrapper_features {
-    outline: 5px solid black;
+    /* outline: 5px solid black; */
 }
 
 .features_list {
@@ -405,7 +404,7 @@
 /******************************************** map **************************/
 
 .wrapper_map {
-    outline: 5px solid black;
+    /* outline: 5px solid black; */
 }
 
 
