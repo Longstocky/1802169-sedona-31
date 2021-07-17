@@ -52,6 +52,10 @@
     font-weight: 700;
 }
 
+.page_inner {
+    display: grid;
+}
+
 .link {
     text-decoration: none;
     color: var(--black);
@@ -541,8 +545,21 @@
     height: 87px;
     display: grid;
     /* grid-template-columns: 212px 117px 90px 80px 160px 540px; */
-    grid-template-columns: 72px 163px 117px 79px 82px 503px 110px 73px;
+    /* grid-template-columns: 72px 163px 117px 79px 82px 503px 110px 73px; */
+    grid-template-columns: max-content min-content min-content;
+    grid-column-gap: 30px;
     list-style: none;
+}
+
+.find {
+    grid-column: 1/2;
+}
+
+.sort_filter_text {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    grid-column: 2/3;
 }
 
 
@@ -551,12 +568,6 @@
 .sort_headline {
     font-size: 21px;
     line-height: 26px;
-}
-
-.sort_filter_text {
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
 }
 
 
@@ -568,11 +579,10 @@
     font-size: 12px;
     line-height: 18px;
     display: grid;
-    grid-template-columns: 117px 79px 82px 90px 200px 200px;
-}
-
-.find {
-    grid-column: 2/3;
+    width: 850px;
+    grid-template-columns: max-content max-content max-content 1fr;
+    grid-column-gap: 30px;
+    /* grid-template-columns: 117px 79px 82px 90px 200px 200px; */
 }
 
 .sort_price {
@@ -584,7 +594,12 @@
 }
 
 .sort_rang {
-    grid-column: 3/5;
+    grid-column: 3/4;
+}
+
+.arrow {
+    text-align: right;
+    grid-column: 4/5;
 }
 
 
@@ -610,11 +625,6 @@
     text-decoration: none;
 }
 
-.arrow {
-    text-align: center;
-    grid-column: 6/7;
-}
-
 
 /*************************************************** List 0f houses *******************************/
 
@@ -632,6 +642,8 @@
     list-style: none;
     text-decoration: none;
     line-height: 0;
+    margin-left: 72px;
+    margin-right: 72px;
     /* padding-left: 72px; */
     /* padding-right: 72px; */
     /* margin-bottom: 30px; */
