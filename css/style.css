@@ -27,6 +27,7 @@
     /*надписи покой*/
     --brown: #503e33;
     --grey-basic: #e5e5e5;
+    --checkbox: #6a6a6a;
 }
 
 .page_body {
@@ -523,7 +524,7 @@
 .filter_include {
     width: 252px;
     /*why?*/
-    margin-left: 72px;
+    margin-left: 113px;
 }
 
 .filter_option label {
@@ -534,24 +535,56 @@
     margin-bottom: 33px;
 }
 
-.filter_input_checkbox+label::before {
+
+/*sostoyanie bez checkbox*/
+
+.filter_input_checkbox+label::before,
+.filter_input_checkbox+label:hover::before {
     content: "";
     position: absolute;
     left: -46px;
-    top: 0;
-    width: 27px;
+    top: -3px;
+    width: 23px;
     height: 23px;
     border: solid var(--white)
 }
 
-.filter_input_checkbox:checked+label::after {
+
+/*posle dobavleniya checkbox*/
+
+.filter_input_checkbox:checked+label::after,
+.filter_input_checkbox:checked+label:hover:after {
     content: "";
     position: absolute;
-    top: 2px;
-    left: -43.5px;
+    top: -3;
+    left: -41px;
     width: 23px;
-    height: 20px;
-    background-color: green;
+    height: 23px;
+    background-image: url("../img/catalog/icons/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter_input_checkbox:disabled+label:hover:after {
+    content: "";
+    position: absolute;
+    left: -46px;
+    top: -3px;
+    width: 23px;
+    height: 23px;
+    border: solid var(--checkbox);
+}
+
+.filter_input_checkbox:checked:disabled+label:hover:after {
+    content: "";
+    position: absolute;
+    top: -3;
+    left: -41px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../img/catalog/icons/checkbox-on-disabled.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 
@@ -641,7 +674,6 @@
     width: 850px;
     grid-template-columns: max-content max-content max-content 1fr;
     grid-column-gap: 30px;
-    /* grid-template-columns: 117px 79px 82px 90px 200px 200px; */
 }
 
 .sort_price {
