@@ -61,14 +61,31 @@
                             <label for="apartments">Апартаменты</label>
                         </div>
                     </fieldset>
+                </form>
 
-                    <fieldset class="filter_price filter">
-                        <legend class="headline">Стоимость в сутки, ₽</legend>
-                        <input type="text" value="От 0 " required>
-                        <input type="text" value="До 3000" required> 0
-                        <input type="range" min="0" max="3000">3000
-                        <button type="submit">Показать</button>
+                <form class="filter_price filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset class="filter_price filter filter_item">
+                        <legend class="headline day_price">Стоимость в сутки, ₽</legend>
+                        <div class=range_filter>
+                            <div class="price_controls">
+                                <label class="min-price">
+                                        от <input type="number" name="min-price" id="min-price" min="0" max="3000" step="1" value="0">
+                                        </label>
+                                <label class="max-price">
+                                        до <input type="number" name="max-price" id="max-price" min="0" max="3000" step="3000" value="3000">
+                                        </label>
+                            </div>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                            <div class="toggle toggle_min"></div>
+                            <div class="toggle toggle_max"></div>
+                        </div>
                     </fieldset>
+
+                    <button class="show" type="submit">Показать</button>
                 </form>
             </div>
 
