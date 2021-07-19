@@ -608,7 +608,7 @@
 
 .filter_price {
     grid-column: 3/4;
-    margin-left: 72px;
+    /* margin-left: 72px; */
 }
 
 .filter .headline {
@@ -636,8 +636,6 @@
     width: 1200px;
     height: 87px;
     display: grid;
-    /* grid-template-columns: 212px 117px 90px 80px 160px 540px; */
-    /* grid-template-columns: 72px 163px 117px 79px 82px 503px 110px 73px; */
     grid-template-columns: max-content min-content min-content;
     grid-column-gap: 30px;
     list-style: none;
