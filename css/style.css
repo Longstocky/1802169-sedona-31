@@ -514,7 +514,6 @@
 
 .filter {
     border: none;
-    margin-bottom: 31px;
     margin-top: 27px;
 }
 
@@ -610,6 +609,8 @@
     grid-column: 3/4;
     /* margin-left: 72px; */
 }
+
+filter_item {}
 
 .filter .headline {
     font-size: 16px;
