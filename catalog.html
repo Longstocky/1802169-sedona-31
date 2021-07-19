@@ -17,7 +17,7 @@
                 <a class="main_header_logo" href="index.html">
                     <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона"></a>
                 <ul class="site_navigation">
-                    <li><a class="link link_menu" href="index.html">Информация</a></li>
+                    <li><a class="link link_menu" href="blank.html">Информация</a></li>
                     <li><a class="link link_menu" href="blank.html">Фото и видео</a></li>
                     <li><a class="link link_menu" href="#mapOfState">Карта штата</a></li>
                     <li><a class="link link_menu" href="catalog.html">Гостиницы</a></li>
@@ -29,44 +29,46 @@
 
             <div class="inner_block">
                 <h2 class="visually_hidden">Выбор жилья</h2>
-                <form class="filter_form" action="https://echo.htmlacademy.ru" method="post">
-                    <fieldset class="filter_include filter">
-                        <legend class="headline">Инфраструктура:</legend>
-                        <div class="filter_option">
-                            <input class="visually_hidden filter_input_checkbox checkbox_on" type="checkbox" name="swimpool" id="swimpool" checked>
-                            <label for="swimpool">Бассейн</label>
-                        </div>
-                        <div class="filter_option">
-                            <input class="visually_hidden filter_input_checkbox checkbox_off" type="checkbox" name="parking" id="parking">
-                            <label for="parking">Парковка</label>
-                        </div>
-                        <div class="filter_option">
-                            <input class="visually_hidden filter_input_checkbox checkbox_off" type="checkbox" name="wi-fi" id="wi-fi">
-                            <label for="wi-fi">wi-fi</label>
-                        </div>
-                    </fieldset>
+                <div class="filter_form">
+                    <form class="filter_form" action="https://echo.htmlacademy.ru" method="post">
+                        <fieldset class="filter_include filter">
+                            <legend class="headline">Инфраструктура:</legend>
+                            <div class="filter_option">
+                                <input class="visually_hidden filter_input_checkbox checkbox_on" type="checkbox" name="swimpool" id="swimpool" checked>
+                                <label for="swimpool">Бассейн</label>
+                            </div>
+                            <div class="filter_option">
+                                <input class="visually_hidden filter_input_checkbox checkbox_off" type="checkbox" name="parking" id="parking">
+                                <label for="parking">Парковка</label>
+                            </div>
+                            <div class="filter_option">
+                                <input class="visually_hidden filter_input_checkbox checkbox_off" type="checkbox" name="wi-fi" id="wi-fi">
+                                <label for="wi-fi">wi-fi</label>
+                            </div>
+                        </fieldset>
 
-                    <fieldset class="filter_description filter">
-                        <legend class="headline">Тип жилья:</legend>
-                        <div class="filter_option">
-                            <input class="visually_hidden filter_input_checkbox checkbox_on" type="checkbox" name="hotel " id="hotel" checked>
-                            <label for="hotel">Гостиница</label>
-                        </div>
-                        <div class="filter_option">
-                            <input class="visually_hidden filter_input_checkbox checkbox_on" type="checkbox" name="motel" id="motel" checked>
-                            <label for="motel">Мотель</label>
-                        </div>
-                        <div class="filter_option">
-                            <input class="visually_hidden filter_input_checkbox checkbox_on" type="checkbox" name="apartments" id="apartments" checked>
-                            <label for="apartments">Апартаменты</label>
-                        </div>
-                    </fieldset>
-
+                        <fieldset class="filter_description filter">
+                            <legend class="headline">Тип жилья:</legend>
+                            <div class="filter_option">
+                                <input class="visually_hidden filter_input_checkbox checkbox_on" type="checkbox" name="hotel " id="hotel" checked>
+                                <label for="hotel">Гостиница</label>
+                            </div>
+                            <div class="filter_option">
+                                <input class="visually_hidden filter_input_checkbox checkbox_on" type="checkbox" name="motel" id="motel" checked>
+                                <label for="motel">Мотель</label>
+                            </div>
+                            <div class="filter_option">
+                                <input class="visually_hidden filter_input_checkbox checkbox_on" type="checkbox" name="apartments" id="apartments" checked>
+                                <label for="apartments">Апартаменты</label>
+                            </div>
+                        </fieldset>
+                    </form>
 
                     <form class="filter_price filter" method="get" action="https://echo.htmlacademy.ru">
-                        <fieldset class="filter_price filter">
+                        <fieldset class="filter_Item filter">
                             <legend class="headline day_price">Стоимость в сутки, ₽</legend>
                             <div class=range_filter>
+                                <!-- knopki -->
                                 <div class="price_controls">
                                     <label class="min-price">
                                         от <input type="number" name="min-price" id="min-price" min="0" max="3000" step="1" value="0">
@@ -75,11 +77,13 @@
                                         до <input type="number" name="max-price" id="max-price" min="0" max="3000" step="3000" value="3000">
                                         </label>
                                 </div>
+                                <!-- kontroller -->
                                 <div class="range-controls">
                                     <div class="scale">
                                         <div class="bar"></div>
                                     </div>
                                 </div>
+                                <!-- 2 ruchky-->
                                 <div class="toggle toggle_min"></div>
                                 <div class="toggle toggle_max"></div>
                             </div>
@@ -87,7 +91,7 @@
 
                         <button class="show" type="submit">Показать</button>
                     </form>
-                </form>
+                </div>
             </div>
 
             <section class="sort">
