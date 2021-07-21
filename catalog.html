@@ -64,32 +64,31 @@
                         </fieldset>
                     </form>
 
-                    <form class="filter_price filter" method="get" action="https://echo.htmlacademy.ru">
+                    <form class="filter_price" method="get" action="https://echo.htmlacademy.ru">
                         <fieldset class="filter_Item filter">
                             <legend class="headline day_price">Стоимость в сутки, ₽</legend>
                             <div class=range_filter>
                                 <!-- knopki -->
                                 <div class="price_controls">
-                                    <label class="min-price">
+                                    <label class="min_price">
                                         от <input type="number" name="min-price" id="min-price" min="0" max="3000" step="1" value="0">
                                         </label>
-                                    <label class="max-price">
+                                    <label class="max_price">
                                         до <input type="number" name="max-price" id="max-price" min="0" max="3000" step="3000" value="3000">
                                         </label>
                                 </div>
-                                <!-- kontroller -->
-                                <div class="range-controls">
+                                <div class="range_controls">
                                     <div class="scale">
                                         <div class="bar"></div>
                                     </div>
+                                    <div class="toggle toggle_min"></div>
+                                    <div class="toggle toggle_max"></div>
                                 </div>
-                                <!-- 2 ruchky-->
-                                <div class="toggle toggle_min"></div>
-                                <div class="toggle toggle_max"></div>
+
                             </div>
                         </fieldset>
 
-                        <button class="show" type="submit">Показать</button>
+                        <button class="button button_show" type="submit">Показать</button>
                     </form>
                 </div>
             </div>
