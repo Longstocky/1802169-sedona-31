@@ -28,6 +28,7 @@
     --brown: #503e33;
     --grey-basic: #e5e5e5;
     --checkbox: #6a6a6a;
+    --toggle: #ababab;
 }
 
 .page_body {
@@ -234,6 +235,14 @@
     text-align: center;
 }
 
+.features_wide h3 {
+    margin-top: 61px;
+}
+
+.features {
+    margin-top: 40px;
+}
+
 .reason_1 {
     /* outline: 5px solid red;
     outline-offset: -5px; */
@@ -255,6 +264,22 @@
     background-color: var(--white);
     /* outline: 5px solid blue;
     outline-offset: -5px; */
+}
+
+.icons_feautures {
+    height: 70px;
+    padding-top: 63px;
+}
+
+.features_item h3 {
+    margin-top: 28px;
+}
+
+.features_item p {
+    /*why? no ne dlya suvenirov*/
+    /* margin-left: 73px;
+    margin-right: 73px;
+    margin-bottom: 87px; */
 }
 
 .text_item {
@@ -603,24 +628,123 @@
 }
 
 
-/*fieldset 3*/
+/*form 2*/
 
 .filter_price {
     grid-column: 3/4;
-    /* margin-left: 72px; */
+    margin-left: 72px;
+    /* outline: solid red; */
 }
 
-filter_item {}
+
+/*fieldset 3*/
+
+.filter_item {}
+
+.range_filter {
+    margin-top: -15px;
+    width: 317px;
+    /* outline: solid blue; */
+}
+
+.range_controls {
+    position: relative;
+    height: 41px;
+    /* background-color: #f1f1f1; */
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+.range_controls .scale {
+    height: 2px;
+    background: var(--toggle);
+}
+
+.range_controls .bar {
+    width: 70%;
+    height: 2px;
+    background: var(--white);
+}
+
+.range_controls .toggle {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 var(--toggle);
+    border: 8px solid var(--white);
+    background-color: var(--toggle);
+    cursor: pointer;
+}
+
+.range_controls .toggle_min {
+    left: 0;
+}
+
+.range_controls .toggle_max {
+    left: 70%;
+}
+
+.day_price {
+    margin-left: 30px;
+}
+
+.price_controls {
+    display: flex;
+    justify-content: space-around;
+    width: 317px;
+    height: 36px;
+    margin-top: -16px;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 2px;
+}
+
+.price_controls input {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.min_price {
+    margin-left: 19px;
+    margin-top: 2px;
+}
+
+.max_price {
+    margin-right: 20px;
+}
 
 .filter .headline {
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 36px;
-    /*stoit li?*/
+    /*why stoit li?*/
     margin-left: -45px;
     font-size: 21px;
     font-weight: 700;
 }
+
+.button_show {
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: transparent;
+    font-weight: 700;
+    border: solid white;
+}
+
+
+/**********************************************************************/
 
 .sort {
     min-height: 87px;
@@ -726,7 +850,7 @@ filter_item {}
 .list_of_houses {
     display: grid;
     grid-template-columns: 135px 1fr min-content;
-    grid-template-rows: 60px 60px;
+    grid-template-rows: 1fr min-content;
     grid-column-gap: 28px;
     max-width: 1200px;
     list-style: none;
@@ -734,11 +858,6 @@ filter_item {}
     line-height: 0;
     margin-left: 72px;
     margin-right: 72px;
-    /* padding-left: 72px; */
-    /* padding-right: 72px; */
-    /* margin-bottom: 30px; */
-    /* padding-bottom: 30px */
-    /* height: 150px; */
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -746,14 +865,7 @@ filter_item {}
 /**************column************/
 
 .picture_1 {
-    /* grid-column: 1/2; */
-    /* grid-row: 1/3; */
-    /************************flex**************/
-    margin-top: 30px;
-    /* margin-bottom: 31px; */
-    /* justify-self: center; */
-    /* grid-column: 1/2; */
-    /* grid-row: 1/3; */
+    grid-row: 1/3;
     width: 135px;
     height: 90px;
 }
@@ -761,9 +873,6 @@ filter_item {}
 .name_hotel {
     grid-column: 2/4;
     grid-row: 1/2;
-    /************************flex**************/
-    /* margin-top: 30px; */
-    /* margin-bottom: 6px;*/
 }
 
 .type_house {
